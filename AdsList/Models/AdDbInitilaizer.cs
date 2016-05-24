@@ -6,7 +6,7 @@ using System.Data.Entity;
 
 namespace AdsList.Models
 {
-    public class AdDbInitializer : DropCreateDatabaseIfModelChanges <AdContext>
+    public class AdDbInitializer : DropCreateDatabaseAlways <AdContext>
     {
         protected override void Seed(AdContext context)
         {

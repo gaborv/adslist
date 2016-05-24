@@ -28,7 +28,7 @@ namespace AdsList
             Ad ad = new Ad
             {
                 Id = 1,
-                Text = AdText.Text,
+                Text = Neutralize(AdText.Text),
                 CreatorUser = User.Identity.Name,
                 Status = ReviewStatus.WaitingForReview,
                 Approved = AutoApprove.Checked
